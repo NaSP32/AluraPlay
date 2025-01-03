@@ -18,6 +18,18 @@
     display: none;
 }
 
+/*Seccion superior de busqueda*/
+.superior__seccion__container{
+    display: flex;
+    align-items: center;
+    /*manejo de textos nowrap, no se quiebren-dividan*/
+    white-space: nowrap;
+    /*barra para ver todo el contenido*/
+    overflow: scroll;
+    gap: 15px;
+
+}
+
 /*Footer*/
 .rodapie__container{
     /*inicio flexbox un elemento al lado del otro*/
@@ -26,6 +38,7 @@
     flex-direction: column;
     flexwrap ajusta el tamaño de las columnas al contenedor
     flex-wrap: wrap;*/
+
     /*flow hace la distribucion por columnas y ajusta el tamaño*/
     flex-flow: column wrap;
 }
