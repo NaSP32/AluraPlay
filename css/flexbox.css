@@ -18,6 +18,24 @@
     display: none;
 }
 
+/*Menu lateral/azul*/
+.menu__container{
+    position: fixed;
+    bottom: 0%;
+    height: 75px;
+    width: 100%;
+}
+
+.menu__lista{
+    display: flex;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
+    display: none;
+}
+
 /*Seccion superior de busqueda*/
 .superior__seccion__container{
     display: flex;
@@ -29,6 +47,8 @@
     gap: 15px;
 
 }
+
+
 
 /*Footer*/
 .rodapie__container{
