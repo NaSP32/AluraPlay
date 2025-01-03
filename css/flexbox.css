@@ -1,5 +1,6 @@
+/*Cabecera-Nav*/
 .cabecera__container{
-    /*Inicio flexbox*/
+    /*Inicio flexbox, un elemento al lado del otro*/
     display: flex;
     /*Separo los elementos con la misma distancia entre ellos*/
     justify-content: space-between;
@@ -17,10 +18,29 @@
     display: none;
 }
 
+/*Footer*/
+.rodapie__container{
+    /*inicio flexbox un elemento al lado del otro*/
+    display: flex;
+    /*Distribuir por columnas
+    flex-direction: column;
+    flexwrap ajusta el tamaño de las columnas al contenedor
+    flex-wrap: wrap;*/
+    /*flow hace la distribucion por columnas y ajusta el tamaño*/
+    flex-flow: column wrap;
+}
+
 @media (min-width:834px){
+    /*Nav*/
     .cabecera__buscar__item{
         /*Aparezco el elemento en los dispositivos con al menos 834px*/
         display: block;
+    }
+
+
+    /*Footer*/
+    .rodapie__container{
+        justify-content: space-between;
     }
 
 }
