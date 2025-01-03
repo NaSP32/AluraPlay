@@ -1,3 +1,13 @@
 .cabecera__container{
+    /*Inicio flexbox*/
     display: flex;
+    /*Separo los elementos con la misma distancia entre ellos*/
+    justify-content: space-between;
+    /*Alineo el contenido en el centro del contenedor*/
+    align-items: center;
+    /*Dejar fijo el elemento al scroll*/
+    position: fixed;
+    /*En que eje va a quedar fijado*/
+    top: 0;
+
 }
