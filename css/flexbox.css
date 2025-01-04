@@ -71,7 +71,7 @@
 .videos__item{
     height: 303px;
     width: 280px;
-    flex-grow:1;
+    flex-grow:1; /*ajusta el tamaño de los elementos a toda la pantalla*/
 }
 
 .videos__container{
