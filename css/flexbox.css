@@ -38,11 +38,22 @@
 
 }
 
+/*Elementos de icono y texto de cada lista*/
+.menu__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+/*Oculto las listas de hermanos de menu__lista*/
 .menu__lista:nth-child(2),
 .menu__lista:nth-child(3),
 .menu__lista:nth-child(4){
     display: none;
 }
+
+
 
 /*Seccion superior de busqueda*/
 .superior__seccion__container{
@@ -71,6 +82,7 @@
     flex-flow: column wrap;
 }
 
+/*Desktop y tablet*/
 @media (min-width:834px){
     /*Nav*/
     .cabecera__buscar__item{
@@ -78,10 +90,28 @@
         display: block;
     }
 
-
     /*Footer*/
     .rodapie__container{
         justify-content: space-between;
     }
 
 }
+
+@media(min-width:847px){
+    /*Menu azul para tablet izq*/
+    .menu__container{
+        left: 0;
+        height: auto;
+        width: 74px;
+        top: 80px;
+    }
+    /*Items del menu*/
+    .menu__lista{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 15px;
+        gap: 33px;
+}
+
+}
+
